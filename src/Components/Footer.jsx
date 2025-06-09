@@ -3,6 +3,16 @@ import logo from '../assets/logo/footerlogo.png'
 function Footer() {
   return (
     <>
+
+    <div className='w-full px-4 py-8 border-gray-200 shadow-2xl shadow-black/50 border-2'>
+        <ul className='flex gap-10 justify-center items-center text-center text-[16px] font-[Inter] font-bold uppercase'>
+            <li>Easy Returns</li>
+            <li>Quality Assured</li>
+            <li>Quick Delivery</li>
+        </ul>
+    </div>
+
+
     <footer className='z-100 mb-15 md:mb-0 w-full md:bottom-0'>
 
         <div className="flex flex-col md:flex-row md:justify-between justify-center items-center gap-25 px-10 lg:px-20 py-15 bg-[#222222] text-gray-400">

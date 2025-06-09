@@ -17,12 +17,12 @@ function Header() {
             head &&
 
             <div className='h-9 bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 uppercase flex justify-center items-center w-full'>
-                <div className='w-full text-center'>
+                <div className='w-full text-center font-extrabold text-white'>
                     <h1>Best in class everyday carry</h1>
                 </div>
 
                 <div onClick={close} className='absolute right-0 px-5'>
-                    <img width="25" height="25" src="https://img.icons8.com/dotty/80/close-window.png" alt="close-window"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios/50/close-window--v1.png" alt="close-window--v1"/>
                 </div>
             </div>
         }
@@ -55,7 +55,7 @@ function Header() {
                 </nav>
             </div>
 
-            <div className='w-full md:hidden flex justify-between px-4 items-center bg-gradient-to-b from-black/20 to-white via-85%'>
+            <div className='w-full md:hidden flex justify-between px-4 items-center'>
                 <div className='w-45 md:w-200 md:h-full h-20 justify-center items-center flex'>
                     <img className='object-contain brightness-0 hover:brightness-100' src={logom} alt="" />
                 </div>
