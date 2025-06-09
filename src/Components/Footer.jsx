@@ -13,7 +13,7 @@ function Footer() {
     </div>
 
 
-    <footer className='z-100 mb-15 md:mb-0 w-full md:bottom-0'>
+    <footer className='z-100 w-full md:bottom-0'>
 
         <div className="flex flex-col md:flex-row md:justify-between justify-center items-center gap-25 px-10 lg:px-20 py-15 bg-[#222222] text-gray-400">
             <div className='flex md:flex-row flex-col gap-25'>

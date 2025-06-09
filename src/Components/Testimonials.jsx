@@ -1,0 +1,147 @@
+import { useRef } from "react";
+
+function Testimonials() {
+
+    const scrollRef = useRef(null);
+    
+      const scroll = (direction) => {
+        if (scrollRef.current) {
+          const scrollAmount = 200; // pixels to scroll
+          scrollRef.current.scrollBy({
+            left: direction === 'left' ? -scrollAmount : scrollAmount,
+            behavior: 'smooth',
+          });
+        }
+      };
+
+  return (
+    <>
+        <div className='p-4 flex flex-col gap-5'>
+            <h1 className='text-5xl font-extrabold uppercase'>Testimonials</h1>
+            <div>
+                <div ref={scrollRef} className='flex whitespace-nowrap gap-2 overflow-x-scroll no-scrollbar'>
+
+                    <div className="flex flex-col gap-2">
+                        <div className='bg-blue-500 h-60 w-60 flex shrink-0 items-center'>
+                            <img className="object-cover w-full h-full" src="https://picsum.photos/seed/picsum/200/300" alt="" />
+                        </div>
+
+                        <div className="w-full flex flex-col whitespace-normal">
+                            <h1>Amaan Jan</h1>
+                            <p>placeat tenetur dolorem quaerat perspiciatis deserunt, dolorum ex saepe ad natus.</p>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                        <div className='bg-blue-500 h-60 w-60 flex shrink-0 items-center'>
+                            <img className="object-cover w-full h-full" src="https://picsum.photos/seed/picsum/200/300" alt="" />
+                        </div>
+
+                        <div className="w-full flex flex-col whitespace-normal">
+                            <h1>Amaan Jan</h1>
+                            <p>placeat tenetur dolorem quaerat perspiciatis deserunt, dolorum ex saepe ad natus.</p>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                        <div className='bg-blue-500 h-60 w-60 flex shrink-0 items-center'>
+                            <img className="object-cover w-full h-full" src="https://picsum.photos/seed/picsum/200/300" alt="" />
+                        </div>
+
+                        <div className="w-full flex flex-col whitespace-normal">
+                            <h1>Amaan Jan</h1>
+                            <p>placeat tenetur dolorem quaerat perspiciatis deserunt, dolorum ex saepe ad natus.</p>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                        <div className='bg-blue-500 h-60 w-60 flex shrink-0 items-center'>
+                            <img className="object-cover w-full h-full" src="https://picsum.photos/seed/picsum/200/300" alt="" />
+                        </div>
+
+                        <div className="w-full flex flex-col whitespace-normal">
+                            <h1>Amaan Jan</h1>
+                            <p>placeat tenetur dolorem quaerat perspiciatis deserunt, dolorum ex saepe ad natus.</p>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                        <div className='bg-blue-500 h-60 w-60 flex shrink-0 items-center'>
+                            <img className="object-cover w-full h-full" src="https://picsum.photos/seed/picsum/200/300" alt="" />
+                        </div>
+
+                        <div className="w-full flex flex-col whitespace-normal">
+                            <h1>Amaan Jan</h1>
+                            <p>placeat tenetur dolorem quaerat perspiciatis deserunt, dolorum ex saepe ad natus.</p>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                        <div className='bg-blue-500 h-60 w-60 flex shrink-0 items-center'>
+                            <img className="object-cover w-full h-full" src="https://picsum.photos/seed/picsum/200/300" alt="" />
+                        </div>
+
+                        <div className="w-full flex flex-col whitespace-normal">
+                            <h1>Amaan Jan</h1>
+                            <p>placeat tenetur dolorem quaerat perspiciatis deserunt, dolorum ex saepe ad natus.</p>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                        <div className='bg-blue-500 h-60 w-60 flex shrink-0 items-center'>
+                            <img className="object-cover w-full h-full" src="https://picsum.photos/seed/picsum/200/300" alt="" />
+                        </div>
+
+                        <div className="w-full flex flex-col whitespace-normal">
+                            <h1>Amaan Jan</h1>
+                            <p>placeat tenetur dolorem quaerat perspiciatis deserunt, dolorum ex saepe ad natus.</p>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                        <div className='bg-blue-500 h-60 w-60 flex shrink-0 items-center'>
+                            <img className="object-cover w-full h-full" src="https://picsum.photos/seed/picsum/200/300" alt="" />
+                        </div>
+
+                        <div className="w-full flex flex-col whitespace-normal">
+                            <h1>Amaan Jan</h1>
+                            <p>placeat tenetur dolorem quaerat perspiciatis deserunt, dolorum ex saepe ad natus.</p>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                        <div className='bg-blue-500 h-60 w-60 flex shrink-0 items-center'>
+                            <img className="object-cover w-full h-full" src="https://picsum.photos/seed/picsum/200/300" alt="" />
+                        </div>
+
+                        <div className="w-full flex flex-col whitespace-normal">
+                            <h1>Amaan Jan</h1>
+                            <p>placeat tenetur dolorem quaerat perspiciatis deserunt, dolorum ex saepe ad natus.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="flex justify-end mx-4 mt-2">
+
+                    <div className="bg-black/10 h-10 w-10 flex items-center justify-center rounded-full m-2">
+                        <button onClick={() => scroll('left')}>
+                        <img width="50" height="50" src="https://img.icons8.com/ios/50/left--v1.png" alt="left--v1"/>
+                        </button>
+                    </div>
+
+                    <div className="bg-black/10 h-10 w-10 flex items-center justify-center rounded-full m-2">
+                        <button onClick={() => scroll('right')}>
+                        <img width="50" height="50" src="https://img.icons8.com/ios/50/right--v1.png" alt="right--v1"/>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </>
+  )
+}
+
+export default Testimonials

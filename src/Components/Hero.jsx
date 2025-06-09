@@ -19,7 +19,7 @@ function Hero() {
       <div>
         <div className='pb-10 pt-3 w-full'>
 
-          <div ref={scrollRef} className="flex overflow-x-scroll gap-1 whitespace-nowrap no-scrollbar scroll-smooth snap-center justify-center">
+          <div ref={scrollRef} className="flex overflow-x-scroll gap-1 whitespace-nowrap no-scrollbar scroll-smooth snap-center">
 
             <div className="relative shrink-0">
               <img src="https://placehold.co/300x500" alt="" />
