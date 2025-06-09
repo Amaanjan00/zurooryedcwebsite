@@ -16,7 +16,7 @@ function Testimonials() {
 
   return (
     <>
-        <div className='p-4 flex flex-col gap-5'>
+        <div className='p-4 flex flex-col gap-5 md:px-20'>
             <h1 className='text-5xl font-extrabold uppercase'>Testimonials</h1>
             <div>
                 <div ref={scrollRef} className='flex whitespace-nowrap gap-2 overflow-x-scroll no-scrollbar'>
