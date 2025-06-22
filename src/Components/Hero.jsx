@@ -2,6 +2,80 @@ import { useRef } from "react";
 
 function Hero() {
 
+  const products = [
+    {
+      image:"https://placehold.co/300x500",
+      name: "Product Name",
+      price: "Rs. 1000"
+    },
+
+    {
+      image:"https://placehold.co/300x500",
+      name: "Product Name",
+      price: "Rs. 1000"
+    },
+
+    {
+      image:"https://placehold.co/300x500",
+      name: "Product Name",
+      price: "Rs. 1000"
+    },
+
+    {
+      image:"https://placehold.co/300x500",
+      name: "Product Name",
+      price: "Rs. 1000"
+    },
+
+    {
+      image:"https://placehold.co/300x500",
+      name: "Product Name",
+      price: "Rs. 1000"
+    },
+
+    {
+      image:"https://placehold.co/300x500",
+      name: "Product Name",
+      price: "Rs. 1000"
+    },
+
+    {
+      image:"https://placehold.co/300x500",
+      name: "Product Name",
+      price: "Rs. 1000"
+    },
+
+    {
+      image:"https://placehold.co/300x500",
+      name: "Product Name",
+      price: "Rs. 1000"
+    },
+
+    {
+      image:"https://placehold.co/300x500",
+      name: "Product Name",
+      price: "Rs. 1000"
+    },
+
+    {
+      image:"https://placehold.co/300x500",
+      name: "Product Name",
+      price: "Rs. 1000"
+    },
+
+    {
+      image:"https://placehold.co/300x500",
+      name: "Product Name",
+      price: "Rs. 1000"
+    },
+
+    {
+      image:"https://placehold.co/300x500",
+      name: "Product Name",
+      price: "Rs. 1000"
+    },
+  ]
+
   const scrollRef = useRef(null);
 
   const scroll = (direction) => {
@@ -21,68 +95,16 @@ function Hero() {
 
           <div ref={scrollRef} className="flex overflow-x-scroll gap-1 whitespace-nowrap no-scrollbar scroll-smooth snap-center">
 
-            <div className="relative shrink-0">
-              <img src="https://placehold.co/300x500" alt="" />
-              <div className="absolute w-full bottom-0 p-4">
-                <h1>abcdesfghijklmnopqrst</h1>
-                <p>sfdsadfasf</p>
-                <a href=""></a>
+            {products.map((product, index) => (
+              <div className="relative shrink-0" key={index}>
+                <img src={product.image} alt="" />
+                <div className="absolute w-full bottom-0 p-4">
+                  <h1>{product.name}</h1>
+                  <p>{product.price}</p>
+                  <a href="">Buy Now</a>
+                </div>
               </div>
-            </div>
-
-            <div className="relative shrink-0">
-              <img src="https://placehold.co/300x500" alt="" />
-              <div className="absolute w-full bottom-0 p-4">
-                <h1>abcdesfghijklmnopqrst</h1>
-                <p>sfdsadfasf</p>
-                <a href=""></a>
-              </div>
-            </div>
-
-            <div className="relative shrink-0">
-              <img src="https://placehold.co/300x500" alt="" />
-              <div className="absolute w-full bottom-0 p-4">
-                <h1>abcdesfghijklmnopqrst</h1>
-                <p>sfdsadfasf</p>
-                <a href=""></a>
-              </div>
-            </div>
-
-            <div className="relative shrink-0">
-              <img src="https://placehold.co/300x500" alt="" />
-              <div className="absolute w-full bottom-0 p-4">
-                <h1>abcdesfghijklmnopqrst</h1>
-                <p>sfdsadfasf</p>
-                <a href=""></a>
-              </div>
-            </div>
-
-            <div className="relative shrink-0">
-              <img src="https://placehold.co/300x500" alt="" />
-              <div className="absolute w-full bottom-0 p-4">
-                <h1>abcdesfghijklmnopqrst</h1>
-                <p>sfdsadfasf</p>
-                <a href=""></a>
-              </div>
-            </div>
-
-            <div className="relative shrink-0">
-              <img src="https://placehold.co/300x500" alt="" />
-              <div className="absolute w-full bottom-0 p-4">
-                <h1>abcdesfghijklmnopqrst</h1>
-                <p>sfdsadfasf</p>
-                <a href=""></a>
-              </div>
-            </div>
-
-            <div className="relative shrink-0">
-              <img src="https://placehold.co/300x500" alt="" />
-              <div className="absolute w-full bottom-0 p-4">
-                <h1>abcdesfghijklmnopqrst</h1>
-                <p>sfdsadfasf</p>
-                <a href=""></a>
-              </div>
-            </div>
+            ))}
 
           </div>
 
